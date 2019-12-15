@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom';
+import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
 import loadable from '@loadable/component';
 
 const Dashboard = loadable(() => {
@@ -21,10 +21,13 @@ const Theater = loadable(() => {
 const MainRoutes = () => {
   return (
     <Switch>
-      <Route exact path="dashboard" component={Dashboard} />
-      <Route exact path="login" component={Login} />
-      <Route exact path="movie" component={Movie} />
-      <Route exact path="theater" component={Theater} />
+      <Route exact path="/">
+        <Redirect to="/dashboard" />
+      </Route>
+      <Route exact path="/dashboard" component={Dashboard} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/movie" component={Movie} />
+      <Route exact path="/theater" component={Theater} />
     </Switch>
   );
 };
