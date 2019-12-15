@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import MainRoutes from 'pages/main.routes';
 
@@ -7,7 +7,7 @@ const Main = () => {
     <div>
       <MainRoutes />
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
