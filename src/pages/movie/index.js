@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from 'pages/movie/content.movie';
+import Container from 'pages/movie/movie.content';
 
 const Movie = () => <Container />;
 
