@@ -40,6 +40,8 @@ const Contianer = () => {
         </Toolbar>
       </AppBar>
 
+      <Toolbar />
+
       <SwipeableDrawer
         open={isOpen}
         onClose={toggleDrawer(false)}
@@ -67,7 +69,7 @@ const SideList = () => {
           activeClassName={classes.active}
           exact
           button
-          to="/"
+          to="/dashboard"
         >
           <ListItemIcon>
             <DashboardIcon />
